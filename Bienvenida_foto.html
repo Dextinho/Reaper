@@ -1,0 +1,38 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Cyberpunk HUD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="shell-container">
+        <div class="profile-container">
+            <img src="{{user_photo}}" alt="Foto de Usuario" class="profile-pic">
+            <h1>Bienvenid@</h1>
+            <h2>{{ first_name }}</h2>
+        </div>
+
+        <div class="info-container">
+            <div class="info-box">
+                <p><strong>ID:</strong> {{ id }}</p>
+                <p><strong>First Name:</strong> {{ first_name }}</p>
+                <p><strong>Last Name:</strong> {{ last_name }}</p>
+            </div>
+            <div class="info-box">
+                <p><strong>Bio:</strong> {{ bio }}</p>
+                <p><strong>Restricted:</strong> {{ restricted }}</p>
+                <p><strong>Verified:</strong> {{ verified }}</p>
+                <p><strong>Premium:</strong> {{ premium }}</p>
+                <p><strong>Hora:</strong> {{ hora_GTM }}</p>
+                <p><strong>Fecha:</strong> {{ Fecha_GTM }}</p>
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <span class="icon">🌐</span>
+            <span class="icon">🔍</span>
+        </div>
+    </div>
+</body>
+</html>
