@@ -20,12 +20,16 @@ pyaes==1.6.1
     # via telethon
 pyasn1==0.6.1
     # via rsa
+pytelegrambotapi==4.23.0
+    # via -r requirements.in
 python-dotenv==1.0.1
     # via -r requirements.in
 pytz==2024.2
     # via -r requirements.in
 requests==2.32.3
-    # via html2image
+    # via
+    #   html2image
+    #   pytelegrambotapi
 rsa==4.9
     # via telethon
 telethon==1.37.0

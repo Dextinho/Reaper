@@ -1,3 +1,6 @@
 telethon
 jinja2
 html2image
+pytz
+python-dotenv
+pyTelegramBotAPI
